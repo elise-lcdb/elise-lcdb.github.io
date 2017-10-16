@@ -1,0 +1,21 @@
+h1 {
+   color: white;
+    margin: 10px;
+    padding: 10px;
+    background: rgb(203, 101, 134);
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    background: rgba(240, 204, 211, 0.23);
+    color: #474747;
+}
+p {
+    font-size:20px;
+}
+
+footer {
+    font-style: italic;
+    font-size: 14px;
+    color: #747474;
+}
