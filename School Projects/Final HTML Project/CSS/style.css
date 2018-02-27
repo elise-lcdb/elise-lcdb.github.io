@@ -1,0 +1,301 @@
+body{
+	font-family: 'Roboto', sans-serif;
+}
+header{
+	background-image: url(bg-2.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	/*background-attachment: fixed;*/
+	background-size: cover;
+	height: 40em;
+	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
+}
+header nav{
+	/*float: right;*/
+	background: none;
+	color: white;
+}
+header nav a{
+	color: white;
+
+}
+
+header nav button.navbar-toggle{
+	background: black;
+}
+
+header nav .navbar-brand{
+	margin-right: 75%;
+}
+
+header nav ul{
+	float: right;
+}
+header #registernow{
+	margin: 10% 0 0 0;
+}
+header #registernow h2, #registernow h3,#registernow h5{
+	color: white;
+	text-align: center;
+}
+header #registernow button{
+	margin: 0 39% 0 39%;
+	color: black;
+}
+#about article h2{
+	font-weight: bold;
+}
+#about article h2:hover{
+	text-decoration: underline;
+}
+#about article p{
+	text-align: justify;
+}
+#about article img{
+	width: 100%;
+	height: auto;
+}
+#about article h5{
+	font-weight: bolder;
+}
+
+#about article #sub2 h5 img{
+	width: 15px;
+	height: auto;
+}
+#about #goal article{
+	margin:0 0 0 0;
+}
+
+#infos{
+	height: 10em;
+	background-image: url(bg-1.jpg);
+	background-size: cover;
+	height: 20em;
+	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
+
+
+}
+#infos figure{
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	margin: auto;
+	padding: auto;
+}
+#infos figure figcaption{
+	color: white;
+	font-weight: bolder;
+}
+
+#speaker{
+	margin-left: 10%;
+}
+#speaker h4{
+	font-weight: bolder;
+	margin:0 0 2% 0;
+}
+
+/*regis part*/
+#regis{
+	background-image: url(images/pattern-1.png);
+	width: 100%;
+	height: auto;
+}
+
+#regis #info{
+	width: 40%;
+}
+
+#regis button{
+	background-color: black;
+	/*width: 125px;
+	height: 35px;*/
+	color: white;
+	border-color: black;
+	margin-left: 43%;
+	text-align: center;
+}
+
+/*bloc part*/
+#bloc{
+	background-image: url(bg-1.jpg);
+	background-size: cover;
+	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
+	width: 100%;
+	height: auto;
+	text-align: center;
+	color: white;
+	padding: 10%;
+	margin-top: 0.5%;
+}
+
+#bloc button{
+	text-align: center;
+	/*border-color: white;*/
+	margin: 2% 0 0 45%;
+}
+
+#page section{
+
+		background: white;
+		width: auto;
+		height: auto;
+	}
+	#page article{
+		background: #bdc3c7;
+		width: auto;
+		height: auto;
+	}
+
+	#page article div img{
+		width: 80%;
+		height: 60%;
+		
+	}
+	#page #eventss{
+		margin: 2%;
+	}
+	#page #eventss #events h3{
+		font-weight: bolder;
+	}
+	#page #eventss #events #event1, #event2, #event3{
+		height:auto;
+		width:auto;
+		background: black;
+		border: white double;
+		margin: 2%;
+	}
+	#page #eventss #events #event1 p, #event1 h3{
+		color: white;
+		text-align: center;
+	}
+	#page #eventss #events #event2 p, #event2 h3{
+		color: white;
+		text-align: center;
+	}
+	#page #eventss #events #event3 p, #event3 h3{
+		color: white;
+		text-align: center;
+	}
+	
+	#page article h3{
+		/*font-family: 'Lobster', cursive;*/
+		margin: 1px 0 0 10%;
+	}
+	#page article img{
+		color: #ecf0f1;
+	}
+
+	#map{
+		height: auto;
+		margin-left: 2%;
+	}
+	#map p{
+		/*width: 50%;*/
+		height: auto;
+		float: left;
+
+
+	}
+	#map iframe{
+		display: right;
+	}
+
+/*footer part*/
+footer{
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	color: white;
+	text-align: center;
+
+}
+
+footer p{
+	margin-left: 40%;
+	padding-top: 2%;
+}
+
+/*footer social part*/
+footer #social{
+	width: 100%;
+	/*height: auto;*/
+}
+
+footer #social ul{
+	padding: 2%;
+}
+
+footer #social ul li{
+	list-style-type: none;
+	float: left;
+	transition: background 0.3s ease-out;
+	-webkit-transistion:  background 0.3s ease-out;
+	-moz-transistion:  background 0.3s ease-out;
+}
+
+footer #social ul li:not(.nomargin){
+	margin-left: 43%;
+}
+
+footer #social ul li a{
+	display: block;
+	width: 30px;
+	height: 30px;
+	/*background: #000;*/
+	text-indent: -10000px;
+}
+
+footer #social ul li:first-child{
+	background: url("images/reseaux-sociaux.png")left top;
+}
+
+footer #social ul li:first-child:hover{
+	background: url("images/reseaux-sociaux.png")left bottom;
+}
+
+footer #social ul li:nth-child(2){
+	background: url("images/reseaux-sociaux.png") -30px top;
+}
+
+footer #social ul li:nth-child(2):hover{
+	background: url("images/reseaux-sociaux.png") -30px bottom;
+}
+
+footer #social ul li:nth-child(3){
+	background: url("images/reseaux-sociaux.png") -60px top;
+}
+
+footer #social ul li:nth-child(3):hover{
+	background: url("images/reseaux-sociaux.png") -60px bottom;
+}
+
+footer #social ul li:nth-child(4){
+	background: url("images/reseaux-sociaux.png") -90px top;
+}
+
+footer #social ul li:nth-child(4):hover{
+	background: url("images/reseaux-sociaux.png") -90px bottom;
+}
+
+/*class part*/
+.unkwon{
+	margin: 0 2% 1% 7%;
+}
+
+.marge_right{
+	margin-right: 7%;
+}
+
+.marge-top{
+	padding-top: 5%;
+}
+
+.marge-bottom{
+	padding-bottom: 5%;
+}
+
+.marge-icone{
+	margin-right: 1%;
+}

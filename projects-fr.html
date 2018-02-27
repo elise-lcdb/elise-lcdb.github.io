@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Elise LCDB</title>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="CSS/style2.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-md  navbar-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index-fr.html">&Agrave; Propos</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="cv-fr.html">CV</a>
+      </li>
+          <li class="nav-item dropdown active">
+      <a class="nav-link" href="projects-fr.html">Portfolio</a>
+      <!-- <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">All Projects</a>
+        <a class="dropdown-item" href="#">Web Development</a>
+        <a class="dropdown-item" href="#">Java</a>
+        <a class="dropdown-item" href="#">Python</a>
+        <a class="dropdown-item" href="#">Networking</a>
+      </div> -->
+    </li> 
+        <li class="nav-item dropdown active">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Languge
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="index.html" style="color: #636E72">Anglais</a>
+        <a class="dropdown-item" href="index-fr.html" style="color: #636E72">Fran&ccedil;ais</a>
+      </div>
+    </li>  
+    </ul>
+  </div>  
+</nav>
+	<h1 class="pop">PORTFOLIO</h1>
+	<h2>  <a href="" class="typewrite" data-period="2000" data-type='[ "JAVA", "HTML / CSS", "JAVASCRIPT", "PHP", "PYTHON" ]'>
+    <span class="wrap"></span>
+  </a></h2>
+  <script type="text/javascript">
+  	//made by vipul mirajkar thevipulm.appspot.com
+var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+  </script>
+    <center><img src="Images/arrow.png" class="pop"></center>
+</header>
+<div class="col-md-10" id="projects">
+	<div class="row" id="project">
+		<img src="School Projects/Scrabble.png" class="pop">
+		<div class="col-md-8">
+			<h3 class="pop">Scrabble - Java</h3>
+			<h5 class="pop">F&eacute;vrier &agrave; Mai 2018</h5>
+		<p class="pop">Un jeu de Scrabble cr&eacute;&eacute; avec le langage de programmation Java. Il est actuellement dans sa version bêta, avec l'objectif de terminer la version finale en mai. En ce moment, un joueurs peut jouer contre un autre à partir d'ordinateurs distincts via un serveur.</p>
+	</div>
+	</div>
+
+	<div class="row" id="project">
+		<img src="School Projects/mysite.png" class="pop">
+		<div class="col-md-8">
+			<a href="index.html"><h3 class="pop">Site Web - Portfolio</h3></a>
+			<h5 class="pop">F&eacute;vrier 2018</h5>
+		<p class="pop">Un site web en anglais et en Fran&ccedil;ais cr&eacute;&eacute; avec HTML 5, CSS 3, Bootstrap 3, et Javascript qui sert comme mon portfolio/CV en ligne.</p>
+    <p class="pop"> <a href="index.html">Voir en Anglais</a></p>
+	</div>
+	</div>
+
+
+		<div class="row" id="project">
+		<img src="School Projects/ydays1.png" class="pop">
+		<div class="col-md-8">
+			<a href="School Projects/YDays_1/index.html"><h3 class="pop">Site Web - Convertisseur du Code</h3></a>
+			<h5 class="pop">D&eacute;cembre 2017</h5>
+		<p class="pop">Un site web cr&eacute;&eacute; avec HTML 5, CCS 3, et Javascript. Il agit comme un mini &eacute;diteur du code o&ugrave; en cliquant sur des diff&eacute;rents buttons, il &eacute;crira votre code.</p>
+    <p class="pop"> <a href="School Projects/YDays_1/index.html">Voir le site</a></p>
+	</div>
+	</div>
+
+		<div class="row" id="project">
+		<img src="School Projects/maquette.png" class="pop">
+		<div class="col-md-8">
+			<h3 class="pop">Site Web - Maquette</h3>
+			<h5 class="pop">D&eacute;cember 2017</h5>
+		<p class="pop">Un site Web créé avec HTML 5, CSS 3 et Bootstrap. Le but de ce projet était de créer un site ressemblant à une <a href="School Projects/maquette2.png">maquette</a> qui nous a été donnée.</p>
+	</div>
+	</div>
+
+		<div class="row" id="project">
+		<img src="School Projects/travelblog.png" class="pop">
+		<div class="col-md-8">
+			<a href="School Projects/Projet Web/index.html"><h3 class="pop">Site Web - Blog</h3></a>
+			<h5 class="pop">Novembre 2017</h5>
+		<p class="pop">L'objectif de ce projet était de créer un blog sur le thème de notre choix en utilisant HTML 5, CSS 3 et Bootstrap. </p>
+    <p class="pop"><a href="School Projects/Projet Web/index.html">Voir le site</a></p>
+	</div>
+	</div>
+<!-- 
+	<div class="row" id="project">
+		<img src="School Projects/maquette.png" class="pop">
+		<div class="col-md-8">
+			<h3 class="pop">Something from python?</h3>
+			<h5 class="pop">The date</h5>
+		<p class="pop">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	</div> -->
+
+	
+</div>
+<br>
+<br>
+<footer>
+	<div id="social" class="col-md-6">
+      <div class="row">
+      <div class="col-md-3">
+      <a href="https://www.linkedin.com/in/elise-l-ba4770117"><center><img src="Images/linkedinw.png"></center></a>
+      </div>
+      <div class="col-md-3">
+      <a href="https://github.com/elise-lcdb"><center><img src="Images/githubw.png"></center></a>
+      </div>
+      <div class="col-md-3">
+      <a href="mailto:elise.lcdb@gmail.com"><center><img src="Images/mailw.png"></center></a>
+      </div>
+      <div class="col-md-3">
+      <a href="https://twitter.com/Elise_LCDB"><center><img src="Images/twitterw.png"></center></a>
+      </div>
+      </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+</body>
+<script type="text/javascript">
+window.sr = ScrollReveal();
+sr.reveal('.pop');
+</script>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Elise LCDB</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+</head>
+<body>
+<div id="part1">
+<nav class="navbar navbar-expand-md  navbar-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index-fr.html">&Agrave; Propos</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="cv-fr.html">CV</a>
+      </li>
+          <li class="nav-item dropdown active">
+      <a class="nav-link" href="projects-fr.html">Portfolio</a>
+      <!-- <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">All Projects</a>
+        <a class="dropdown-item" href="#">Web Development</a>
+        <a class="dropdown-item" href="#">Java</a>
+        <a class="dropdown-item" href="#">Python</a>
+        <a class="dropdown-item" href="#">Networking</a>
+      </div> -->
+    </li> 
+        <li class="nav-item dropdown active">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Languge
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="index.html" style="color: #636E72">Anglais</a>
+        <a class="dropdown-item" href="index-fr.html" style="color: #636E72">Fran&ccedil;ais</a>
+      </div>
+    </li>  
+    </ul>
+  </div>  
+</nav>
+<h1>Elise Le Caruyer de Beauvais</h1>
+<h2>  <a href="" class="typewrite" data-period="2000" data-type='[ "Etudiante en informatique.", "Réseaux.", "Securité" ]'>
+    <span class="wrap"></span>
+  </a></h2>
+  <script type="text/javascript">
+  	//made by vipul mirajkar thevipulm.appspot.com
+var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+  </script>
+  <center><img src="Images/arrow.png" class="pop"></center>
+</div>
+
+<div id="part2">
+	<center><img src="Images/profile.jpg" class="pop"></center>
+	<h1 class="pop">&Agrave; Propos</h1>
+	<div class="col-md-8" id="about">
+		<p class="pop">Une &eacute;tudiante Franco-Am&eacute;ricaine en informatique en première ann&eacute;e à INGÉSUP – YNOV.
+Je suis int&eacute;ress&eacute;é par la s&eacute;curit&eacute; des systèmes d’information et du r&eacute;seau informatique, j’aimerais approfondir mes connaissances dans ces domaines.Bien que je veux me concentrer sur le réseaux, j'ai l'intention de continuer à étudier le développement afin de pouvoir être équilibré dans les deux domaines. Je suis prête à explorer de nouvelles technologies et plateformes, et je suis autonome, curieuse , ambitieuse, et pertinente en communication et en travail d’équipe.</p>
+	</div>
+</div>
+
+<footer>
+	<div id="social" class="col-md-6">
+      <div class="row">
+      <div class="col-md-3">
+      <a href="https://www.linkedin.com/in/elise-l-ba4770117"><center><img src="Images/linkedinw.png"></center></a>
+      </div>
+      <div class="col-md-3">
+      <a href="https://github.com/elise-lcdb"><center><img src="Images/githubw.png"></center></a>
+      </div>
+      <div class="col-md-3">
+      <a href="mailto:elise.lcdb@gmail.com"><center><img src="Images/mailw.png"></center></a>
+      </div>
+      <div class="col-md-3">
+      <a href="https://twitter.com/Elise_LCDB"><center><img src="Images/twitterw.png"></center></a>
+      </div>
+      </div>
+  </div>
+</footer>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+</body>
+<script type="text/javascript">
+window.sr = ScrollReveal();
+sr.reveal('.pop');
+</script>
+
+</html>
