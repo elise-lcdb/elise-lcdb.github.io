@@ -48,6 +48,7 @@
     <span class="wrap"></span>
   </a></h2>
   <script type="text/javascript">
+  	//made by vipul mirajkar thevipulm.appspot.com
 var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
@@ -58,46 +59,9 @@ var TxtType = function(el, toRotate, period) {
         this.isDeleting = false;
     };
 
-<<<<<<< HEAD
     TxtType.prototype.tick = function() {
         var i = this.loopNum % this.toRotate.length;
         var fullTxt = this.toRotate[i];
-=======
-<div>
-	<empty class="col-md-1"></empty>
-<div id="intro" class="col-md-11">
-	<img class="col-md-3 col-xs-12" src="me.jpg">
-	<div>
-	<h1>ELISE LE CARUYER DE BEAUVAIS</h1>
-	<h2>Computer Science Student</h2>
-	
-</div>
-</div>
-<empty class="col-md-3" ></empty>
-</div>
-</header>
-<div class="container">
-	<empty class="col-md-1"></empty>
-	<article class="col-md-10">
-		<h1 id="aboutt">About</h1>
-		<hr>
-		<div class="col-md-12">
-			<empty class="col-md-3"></empty>
-			<p class="col-md-6"> Hello world! I am a dual-citizen American and French computer science student in Paris, France. I plan to specialize in Computer Networking, more specifically Cyber-Security. </p>
-			<empty class="col-md-3"></empty>
-		</div>
-		
-		<br class="col-md-12">
-		<hr class="col-md-12">
-		<h1 id="exp">Experience</h1>
-		<hr>
-		<h2>Rand Frères - June 2015</h2>
-		<div class="col-md-12">
-		<empty class="col-md-3"></empty>
-		<p class="col-md-6">In the 10th grade, I completed a week long internship in Digital Marketing.</p>
-		<empty class="col-md-3"></empty>
-		</div>
->>>>>>> 513338fa3512c1848801a87f2bb2abb53189a141
 
         if (this.isDeleting) {
         this.txt = fullTxt.substring(0, this.txt.length - 1);
@@ -105,75 +69,7 @@ var TxtType = function(el, toRotate, period) {
         this.txt = fullTxt.substring(0, this.txt.length + 1);
         }
 
-<<<<<<< HEAD
         this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-=======
-		<br>
-		<br class="col-md-12">
-		<hr class="col-md-12">		
-		<h1 id="edu">Education</h1>
-		<hr>
-		<h2>Ingésup Computer Science University- 2017 to Present</h2>
-		<div class="col-md-12">
-			<empty class="col-md-3"></empty>
-			<p class="col-md-6">I am currently in my first year at Ingésup completing my Bachelor's Degree in Computer Science, and will complete my Master's Degree as well.</p>
-			<empty class="col-md-3"></empty>
-		</div>
-		<h2>Ecole Jeannine Manuel International School- 2012 to 2017</h2>
-		<div class="col-md-12">
-			<empty class="col-md-3"></empty>
-			<p class="col-md-6">In May 2017, I obtained the International Baccalaureate with the Bilingual Diploma, and High School Diploma.</p>
-			<empty class="col-md-3"></empty>
-		</div>
-		<br class="col-md-12">
-		<hr class="col-md-12">
-		<div id="myskills">
-		<h1>Skills</h1>
-		<hr>
-		<div class="col-md-6">
-			<h2>HTML</h2>
-			<h2>CSS</h2>
-			<h2>Javascript</h2>
-			<h2>Java</h2>
-			<h2>Python</h2>
-		</div>
-		<empty class="col-md-2"></empty>
-		<div class="col-md-3">
-			<h2>English</h2>
-			<h4>Bicultural & Native</h4>
-			<h2>French</h2>
-			<h4>Bicultural & Fluent</h4>
-			<h2>Spanish</h2>
-			<h4>Intermediate</h4>
-			
-		</div>
-		<div class="col-md-12">
-		<br class="col-md-12">
-		<hr class="col-md-12">
-		<h1 id="other">Other</h1>
-		<hr>
-		<h2>Volunteer - 2015 to Present</h2>
-		<h5>Translator for Huntington's Disease Youth Organization</h5>
-		<h2>Volunteer - 2016 to 2017</h2>
-		<h5>Regularly gave presentations on internet safety to primary school students.</h5>
-		<h2>Robotics - 2016</h2>
-		<h5>Placed 3rd in the regional competition for First Lego League, and 12th in nationals.</h5>
-		</div>
-		<div class="col-md-12">
-		<br class="col-md-12">
-		<hr class="col-md-12">
-		<h1 id="contactme">CONTACT</h1>
-		<hr>
-		<br>
-		<a href="https://www.linkedin.com/in/elise-l-ba4770117"><img src="lin.png"></a>
-		<a href="https://twitter.com/Elise_LCDB"><img src="twitter.png"></a>
-		<a href="https://github.com/elise-lcdb"><img src="github.png"></a>
-		</div>
-		<br class="col-md-12">
-		<br class="col-md-12">
-		</div>
-		<br>
->>>>>>> 513338fa3512c1848801a87f2bb2abb53189a141
 
         var that = this;
         var delta = 200 - Math.random() * 100;
