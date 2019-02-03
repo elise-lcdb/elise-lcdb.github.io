@@ -1,153 +1,261 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
 	<title>Elise LCDB</title>
-	<link rel="stylesheet" type="text/css" href="CSS/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">  
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-</head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" type="text/css" href="style.css">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  	<link rel="icon" href="Favicon.png" type="image/x-icon"/>
+<link rel="shortcut icon" href="Favicon.png" type="image/x-icon"/>
 </head>
 <body>
-<div id="part1">
-<nav class="navbar navbar-expand-md  navbar-dark">
+	<div class="header">
+	<nav class="navbar navbar-expand-md navbar-dark">
+		<div class="container">
+  <a class="navbar-brand" href="#"><img src="Images/Logo.svg"></a>
+
+  <!-- Toggler/collapsibe Button -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
+
+  <!-- Navbar links -->
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="index-fr.html">&Agrave; Propos</a>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#cv">CV</a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="cv-fr.html">CV</a>
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/elise-lcdb/Academic-Projects">Projets Académiques</a>
       </li>
-          <li class="nav-item dropdown active">
-      <a class="nav-link" href="projects-fr.html">Portfolio</a>
-      <!-- <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">All Projects</a>
-        <a class="dropdown-item" href="#">Web Development</a>
-        <a class="dropdown-item" href="#">Java</a>
-        <a class="dropdown-item" href="#">Python</a>
-        <a class="dropdown-item" href="#">Networking</a>
-      </div> -->
-    </li> 
-        <li class="nav-item dropdown active">
-      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-        Languge
-      </a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="index.html" style="color: #636E72">Anglais</a>
-        <a class="dropdown-item" href="index-fr.html" style="color: #636E72">Fran&ccedil;ais</a>
-      </div>
-    </li>  
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">English</a>
+      </li> 
     </ul>
-  </div>  
+  </div> 
+</div>
 </nav>
-<h1>Elise Le Caruyer de Beauvais</h1>
-<h2>  <a href="" class="typewrite" data-period="2000" data-type='[ "Etudiante en informatique.", "Bachelor Architecture Informatique et Systèmes d`information" "Réseaux.", "Securité", "Development" ]'>
-    <span class="wrap"></span>
-  </a></h2>
-  <script type="text/javascript">
-  	//made by vipul mirajkar thevipulm.appspot.com
-var TxtType = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
-
-    TxtType.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
-
-        if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
-
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-        var that = this;
-        var delta = 200 - Math.random() * 100;
-
-        if (this.isDeleting) { delta /= 2; }
-
-        if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-        }
-
-        setTimeout(function() {
-        that.tick();
-        }, delta);
-    };
-
-    window.onload = function() {
-        var elements = document.getElementsByClassName('typewrite');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
-        }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-        document.body.appendChild(css);
-    };
-  </script>
-  <center><img src="Images/arrow.png" class="pop"></center>
+<div class="container introduction">
+	<br>
+	<center>
+	<img class="profile-image" src="Images/Elise-Profile.png">
+	<h1>Elise Le Caruyer de Beauvais</h1>
+	<h2>Développeuse Web & Étudiante</h2>
+	<a href="mailto:elise.lcdb@gmail.com"><img class="contact-icons" src="Images/mail.svg"></a>
+	<a href="https://github.com/elise-lcdb"><img class="contact-icons" src="Images/github.svg"></a>
+	<a href="https://www.linkedin.com/in/elise-lcdb/"><img class="contact-icons" src="Images/linkedin.svg"></a>
+</center>
+<br>
+<br>
 </div>
-
-<div id="part2">
-	<center><img src="Images/profile.JPG" class="pop"></center>
-	<h1 class="pop">&Agrave; Propos</h1>
-	<div class="col-md-8" id="about">
-		<p class="pop">Une &eacute;tudiante Franco-Am&eacute;ricaine en informatique en première ann&eacute;e à INGÉSUP – YNOV.
-Je suis int&eacute;ress&eacute;é par la s&eacute;curit&eacute; des systèmes d’information et du r&eacute;seau informatique, j’aimerais approfondir mes connaissances dans ces domaines.Bien que je veux me concentrer sur le réseaux, j'ai l'intention de continuer à étudier le développement afin de pouvoir être équilibré dans les deux domaines. Je suis prête à explorer de nouvelles technologies et plateformes, et je suis autonome, curieuse , ambitieuse, et pertinente en communication et en travail d’équipe.</p>
+</div>
+<br>
+<br>
+<section>
+	<div class="container" id="cv">
+		<div class="resume-card">
+			<div class="card-container">
+			<h4 class="resume-card-title">Introduction</h4>
+			<p class="resume-card-title-paragraph">Je suis une étudiante franco-américain étudiant en informatique à Paris. Je suis également une développeuse web (front-end) et designer chez Real Consulting Data. <br> Je suis très motivée, je suis curieuse et j'aime apprendre de nouvelles choses. Je veux être connaissable en programmation et aussi en réseaux informatiques.</p>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="resume-card">
+			<div class="card-container">
+			<h4 class="resume-card-title">Expérience</h4>
+			<div>
+			<h6 class="resume-card-title6">Real Consulting Data</h6>
+			<div class="resume-card-tag">
+				<p class="resume-card-tag-content">Juin 2018 à Présent</p>
+			</div>
+			</div>
+			<p class="resume-card-title-paragraph">Développeuse Web (Front-End) et Designer</p>
+			<div>
+			<h6 class="resume-card-title6">Ecole Jeannine Manuel</h6>
+			<div class="resume-card-tag">
+				<p class="resume-card-tag-content">Septembre 2018 à Présent</p>
+			</div>
+			</div>
+			<p class="resume-card-title-paragraph">Responsable de Club de Codage et de Robotiques</p>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="resume-card">
+			<div class="card-container">
+			<h4 class="resume-card-title">Formation</h4>
+			<div>
+			<h6 class="resume-card-title6">Ingésup - Ynov</h6>
+			<div class="resume-card-tag">
+				<p class="resume-card-tag-content">Septembre 2017 à Présent</p>
+			</div>
+			</div>
+			<p class="resume-card-title-paragraph">Étudiante de deuxième année en informatique</p>
+			<div>
+			<h6 class="resume-card-title6">Ecole Jeannine Manuel</h6>
+			<div class="resume-card-tag">
+				<p class="resume-card-tag-content">Septembre 2012 à Mai 2017</p>
+			</div>
+			</div>
+			<p class="resume-card-title-paragraph"> Baccalaureat International avec le Diplôme Bilingue, et le High School Diploma</p>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="resume-card">
+			<div class="card-container">
+			<h4 class="resume-card-title">Langues</h4>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="skills-card pink">
+						<h6 class="skills-card-title" style="padding-top: 15px !important;">Anglais</h6>
+						<p class="skills-card-subtitle">Langue Maternelle</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="skills-card purple">
+						<h6 class="skills-card-title" style="padding-top: 15px !important;">Français</h6>
+						<p class="skills-card-subtitle">Courant</p>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="resume-card">
+			<div class="card-container">
+			<h4 class="resume-card-title">Langages Web</h4>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="skills-card orange">
+						<h6 class="skills-card-title">HTML</h6>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="skills-card purple">
+						<h6 class="skills-card-title">CSS</h6>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="skills-card lavender">
+						<h6 class="skills-card-title">JavaScript</h6>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="skills-card blue">
+						<h6 class="skills-card-title">PHP</h6>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="resume-card">
+			<div class="card-container">
+			<h4 class="resume-card-title">Frameworks</h4>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="skills-card purple">
+						<h6 class="skills-card-title">Vue JS</h6>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="skills-card lavender">
+						<h6 class="skills-card-title">Bootstrap</h6>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="skills-card pink">
+						<h6 class="skills-card-title">Bulma</h6>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="resume-card">
+			<div class="card-container">
+			<h4 class="resume-card-title">Langages de Programmation</h4>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="skills-card orange">
+						<h6 class="skills-card-title">Python</h6>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="skills-card pink">
+						<h6 class="skills-card-title">Java</h6>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="skills-card lavender">
+						<h6 class="skills-card-title">C#</h6>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="resume-card">
+			<div class="card-container">
+			<h4 class="resume-card-title">IDE</h4>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="skills-card purple">
+						<h6 class="skills-card-title">Sublime</h6>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="skills-card blue">
+						<h6 class="skills-card-title">Visual Studio</h6>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="skills-card powderblue">
+						<h6 class="skills-card-title">Eclipse</h6>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="resume-card">
+			<div class="card-container">
+			<h4 class="resume-card-title">Design</h4>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="skills-card powderblue">
+						<h6 class="skills-card-title">Figma</h6>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="skills-card lavender">
+						<h6 class="skills-card-title">Affinity</h6>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="skills-card blue">
+						<h6 class="skills-card-title">Photoshop</h6>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
 	</div>
-</div>
+</section>
+<br>
+<br>
 
-<footer>
-	<div id="social" class="col-md-6">
-      <div class="row">
-      <div class="col-md-3">
-      <a href="https://www.linkedin.com/in/elise-lcdb"><center><img src="Images/linkedinw.png"></center></a>
-      </div>
-      <div class="col-md-3">
-      <a href="https://github.com/elise-lcdb"><center><img src="Images/githubw.png"></center></a>
-      </div>
-      <div class="col-md-3">
-      <a href="mailto:elise.lcdb@gmail.com"><center><img src="Images/mailw.png"></center></a>
-      </div>
-      <div class="col-md-3">
-      <a href="https://twitter.com/Elise_LCDB"><center><img src="Images/twitterw.png"></center></a>
-      </div>
-      </div>
-  </div>
-</footer>
-<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
 </body>
-<script type="text/javascript">
-window.sr = ScrollReveal();
-sr.reveal('.pop');
-</script>
-
 </html>

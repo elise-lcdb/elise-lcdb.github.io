@@ -1,0 +1,123 @@
+/**************************
+		   FONTS
+**************************/
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+body{
+	font-family: 'Roboto', sans-serif;
+}
+/**************************
+		   NAVBAR
+**************************/
+.header .navbar{
+
+}
+.header .nav-link{
+	color: white !important;
+	font-size: 1.2em;
+}
+.header .navbar-brand img{
+	width: 3em;
+	height: auto;
+}
+.navbar-dark .navbar-toggler{
+	border: none !important;
+	color: white !important;
+}
+/**************************
+		 HEADER
+**************************/
+.header{
+	background: linear-gradient(80.07deg, rgba(244, 46, 120, 0.85) 0%, rgba(193, 122, 252, 0.85) 100%);;
+}
+.profile-image{
+	margin: 0 auto;
+	width: 13em;
+	height: auto;
+}
+.introduction{
+	color: white;
+}
+.introduction h1{
+	margin-top: 0.5em;
+}
+.introduction h2{
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+.contact-icons{
+	width: 2em;
+	height: auto;
+
+}
+/**************************
+		RESUMÉ
+**************************/
+.resume-card{
+	box-shadow: 0 4px 20px 0 RGBA(184,178,217,.3);
+}
+.card-container{
+	padding: 1.5em 2em;
+}
+.resume-card-title{
+	color: #4a4a4a;
+	font-weight: bold;
+	margin-bottom: 0.7em;
+}
+.resume-card-title6{
+	color: #656D78;
+	font-weight: bold;
+	font-size: 1.2em;
+	display: inline-block;
+}
+.resume-card-title-paragraph{
+	color: #656D78;
+}
+.resume-card-tag{
+	border: 1px solid rgba(193, 122, 252, 0.2);
+	border-radius: 4px;
+	background: rgba(193, 122, 252, 0.1);
+	padding: 5px 10px;
+	width: fit-content;
+	display: inline-block;
+	float: right;
+}
+.resume-card-tag-content{
+	margin-bottom: 0px;
+	color: #656D78;
+	font-size: 0.8em;
+}
+.skills-card{
+	text-align: center;
+	border-radius: 4px;
+	padding: 20px 10px;
+	width: 160px;
+    height: 125px;
+}
+.skills-card-title{
+	color: white;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding-top: 30px;
+}
+.skills-card-subtitle{
+	color: white;
+	margin-bottom: 0px !important;
+}
+.skills-card.pink{
+	background: linear-gradient(45deg, #FF839D 0%, #F50B9A 100%);
+}
+.skills-card.purple{
+	background: linear-gradient(45deg, #6681EA 0%, #7E43AA 100%);
+}
+.skills-card.orange{
+	background: linear-gradient(45deg, #FEC188 0%, #FF8993 100%);
+}
+.skills-card.lavender{
+	background: linear-gradient(45deg, #EFBAD3 0%, #A254F2 100%);
+}
+.skills-card.blue{
+	background: linear-gradient(45deg, #6ACBE0 0%, #6859EA 100%);
+}
+.skills-card.powderblue{
+	background: linear-gradient(45deg, #F3DCFB 0%, #679FE4 100%);
+}
